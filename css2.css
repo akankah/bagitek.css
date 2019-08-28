@@ -1,0 +1,182 @@
+/* CSS FOR LAYOUT */
+body#layout, body#layout div.section {
+	font-family: Arial, sans-serif;
+}
+body#layout {
+	max-width: 1040px;
+}
+body#layout .sidebar-sticky {
+	z-index:0;
+}
+body#layout #wrapper {
+	overflow: unset;
+}
+body#layout #header-container {
+	height: auto;
+	position: unset;
+}
+body#layout::before {
+	content: "VioMagz v.3.2.0";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #175A96;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #d6d6d6;
+}
+body#layout .widget-content {
+	box-shadow: none;
+}
+body#layout #navbar {
+	display: block;
+    margin: 0;
+    max-width: 100%;
+    padding: 0 20px;
+	margin-bottom: 12px;
+}
+body#layout .header {
+	width: 200px;
+}
+body#layout #navbar::before {
+	content: "Untuk mempercepat loading blog, klik edit dan nonaktifkan Navbar ==>>";
+    position: absolute;
+    bottom: 18px;
+    z-index: 999;
+    right: 80px;
+    color: #999;
+    font-size: 12px;
+}
+body#layout #wrapper, body#layout #header-wrapper, body#layout #footer-container, body#layout #footer-widget-container {
+	margin: 0 0;
+	padding: 0 20px;
+}
+body#layout #footer-container {
+	padding-bottom: 20px;
+}
+body#layout #cssmenu {
+	position: relative;
+	height: 33px;
+	display: block;
+    padding: 20px;
+    margin: 8px 0;
+    width: 500px;
+    font-size: 14px;
+    color: #fff;
+    background: #bbbbbb;
+    font-weight: bold;
+    float: right;
+	border: 1px solid #8e8e8e;
+}
+body#layout #cssmenu ul, body#layout #footer-navmenu ul {
+	display: none;
+}
+body#layout #cssmenu::after {
+	content: "Menu navigasi harus diedit melalui Edit HTML";
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    visibility: visible;
+}
+body#layout .post-container {
+	padding: 0 15px 0 0;
+}
+body#layout .sidebar-container {
+	padding: 0 0 0 0;
+}
+body#layout #searchfs, body#layout .latest-post-title, body#layout .section h4 {
+	display: none;
+}
+body#layout div.section { 
+	background: transparent;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body#layout .sidebar-sticky::before {
+    content: "Widget Sidebar (Sticky)";
+}
+body#layout .sidebar::before {
+    content: "Widget Sidebar";
+}
+body#layout .above-post-widget::before {
+	content: "Widget di Atas Post (Hanya Homepage)";
+}
+body#layout .Blog::before {
+	content: "Posting Blog";
+	margin-bottom: 8px;
+}
+body#layout .bellow-header-widget::before {
+	content: "Widget di Bawah Header/Menu Navigasi";
+}
+body#layout #footer-widget-container::before {
+	content: "Widget di Atas Footer";
+}
+body#layout .sidebar-sticky::before, body#layout .sidebar::before, body#layout .above-post-widget::before, body#layout .Blog::before, body#layout .bellow-header-widget::before, body#layout #footer-widget-container::before {
+    padding: 5px 10px;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    background: #bbbbbb;
+	border: 1px solid #8e8e8e;
+    font-weight: bold;
+}
+body#layout .add_widget, body#layout .widget-content {
+	padding: 12px;
+}
+body#layout .add_widget a {
+	margin-left: 0px;
+	font-size: 14px;
+}
+body#layout div.layout-title {
+	font-size: 14px;
+}
+body#layout div.layout-widget-description {
+	font-size: 12px;
+}
+body#layout .editlink {
+	color: #FFFFFF !important;
+	background: #bbbbbb;
+    border-radius: 15px;
+	padding: 4px 6px;
+}
+
+body#layout #footer-wrapper {
+	position: relative;
+	background: #fff;
+    height: 40px;
+    border: 1px solid #ddd;
+}
+body#layout #footer-wrapper::after {
+	content:"Footer";
+	color:#999;
+	position:absolute;
+	top:12px;
+}
+body#layout #footer-navmenu {
+	position: relative;
+    display: block;
+    padding:0;
+    font-size: 14px;
+    color: #fff;
+    background: #bbbbbb;
+	border: 1px solid #8e8e8e;
+    font-weight: bold;
+    margin: 0 20px 8px;
+    height: 50px;
+}
+body#layout #footer-navmenu::after {
+    content: "Menu navigasi harus diedit melalui Edit HTML";
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    visibility: visible;
+}
