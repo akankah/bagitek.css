@@ -1,4 +1,144 @@
 
+/* Variable definitions start
+   ==========================
+   <Variable name="keycolor" description="Main Color" type="color" default="#175A96" value="#175A96"/>
+
+   <Group description="Teks Halaman" selector="body">
+     <Variable name="page.text.font" description="Font" type="font"
+         default="normal normal 16px Raleway, Arial, sans-serif" value="normal normal 16px Raleway, Arial, sans-serif"/>
+     <Variable name="body.text.color" description="Main Text Color" type="color" default="#393939" value="#393939"/>
+   </Group>
+
+   <Group description="Warna Background" selector=".body-fauxcolumns-outer">
+     <Variable name="body.background.color" description="Body" type="color" default="#ffffff" value="#ffffff"/>
+	 <Variable name="posts.background.color" description="Warna Wrapper" type="color" default="#ffffff" value="#ffffff"/>
+     <Variable name="header.background.kiri" description="Warna Header Kiri" type="color" default="#5b86e5" value="#5b86e5"/>
+	 <Variable name="header.background.kanan" description="Warna Header Kanan" type="color" default="#36d1dc" value="#36d1dc"/>
+	 <Variable name="footer.background.color" description="Footer" type="color" default="#222222" value="#222222"/>
+   </Group>
+   
+   <Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="$(color) none repeat scroll top left" value="$(color) none repeat scroll top left"/>
+   <Variable name="body.background.override" description="Body Background Override" type="string" default="" value=""/>
+   
+   <Group description="Warna Link" selector=".main-outer">
+     <Variable name="body.link.color" description="Link Color" type="color" default="#175A96" value="#175A96"/>
+     <Variable name="body.link.visited.color" description="Visited Color" type="color" default="#175A96" value="#175A96"/>
+     <Variable name="body.link.hover.color" description="Hover Color" type="color" default="#555555" value="#555555"/>
+   </Group>
+
+   <Group description="Judul Blog" selector=".header">
+     <Variable name="header.font" description="Font" type="font"
+         default="bold 25px Poppins, Arial, sans-serif" value="bold 25px Poppins, Arial, sans-serif"/>
+     <Variable name="header.title.color" description="Title Color" type="color" default="#ffffff"  value="#ffffff"/>
+   </Group> 
+   
+   <Group description="Menu Navigasi" selector="#cssmenu">
+     <Variable name="navmenu.font" description="Font" type="font"
+         default="bold 12px Raleway, Arial, sans-serif" value="bold 12px Raleway, Arial, sans-serif"/>
+     <Variable name="navmenu.font.color" description="Color" type="color" default="#ffffff"  value="#ffffff"/>
+     <Variable name="navmenu.font.hover.color" description="Hover Color" type="color" default="#ffffff"  value="#ffffff"/>
+   </Group>
+   
+   <Group description="Submenu Navigasi" selector="#cssmenu">
+     <Variable name="navsubmenu.font" description="Font" type="font"
+         default="400 12px Raleway, Arial, sans-serif" value="400 12px Raleway, Arial, sans-serif"/>
+     <Variable name="navsubmenu.font.color" description="Color" type="color" default="#555555"  value="#555555"/>
+     <Variable name="navsubmenu.font.background" description="Background Color" type="color" default="#f8f8f8"  value="#f8f8f8"/>
+     <Variable name="navsubmenu.hover" description="Hover Color" type="color" default="#eaeaea"  value="#eaeaea"/>
+   </Group>
+
+   <Group description="Icon Pencarian" selector=".search-icon">
+     <Variable name="search.icon.color" description="Color" type="color" default="#ffffff"  value="#ffffff"/>
+   </Group>
+   
+   <Group description="Judul Postingan" selector="h2.post-title, .FeaturedPost .post-summary h3">
+     <Variable name="post.title.font" description="Font" type="font"
+         default="bold 20px Poppins, Arial, sans-serif" value="bold 20px Poppins, Arial, sans-serif"/>
+	 <Variable name="posts.title.color" description="Link Color" type="color" default="#555555" value="#555555"/>
+	 <Variable name="post.title.hover.color" description="Link Hover Color" type="color" default="#175A96" value="#175A96"/>
+   </Group>
+
+   <Group description="Judul Widget" selector=".sidebar h2, .sidebar-sticky h2, .latest-post-title h2, .above-post-widget h2">
+     <Variable name="widget.title.font" description="Title Font" type="font"
+        default="normal 15px Raleway, Arial, sans-serif" value="normal 15px Raleway, Arial, sans-serif"/>
+	 <Variable name="widget.title.color" description="Color" type="color" default="#555555" value="#555555"/>
+	 <Variable name="widget.border.color" description="Border Color" type="color" default="#eaeaea" value="#eaeaea"/>
+   </Group>
+
+   <Group description="Label di atas Postingan" selector=".label-info-th">
+     <Variable name="label.bg.color" description="Background" type="color" default="#ffffff" value="#ffffff"/>
+	 <Variable name="label.color" description="Color" type="color" default="#555555" value="#555555"/>
+	 <Variable name="label.border.color" description="Border Color" type="color" default="#efefef" value="#efefef"/>
+   </Group>
+
+   <Group description="Teks Postingan" selector=".post-body, .post-snippet">
+     <Variable name="post.page.text.font" description="Font" type="font"
+         default="normal normal 16px Raleway, Arial, sans-serif" value="normal normal 16px Raleway, Arial, sans-serif"/>
+	 <Variable name="post.body.color" description="Color" type="color" default="#393939" value="#393939"/>
+   </Group>
+   
+   <Group description="Post Footer" selector=".post-info">
+     <Variable name="post.footer.font" description="Font" type="font"
+         default="normal normal 13px Raleway, Arial, sans-serif" value="normal normal 13px Raleway, Arial, sans-serif"/>
+     <Variable name="post.footer.color" description="Color" type="color" default="#555555" value="#555555"/>
+   </Group>
+   
+   <Group description="Icon Media Sosial di Footer" selector="#footer-widget-container">
+     <Variable name="footerwidget.bg.color" description="Background Color" type="color" default="#f8f8f8"  value="#f8f8f8"/>
+	 <Variable name="footerwidget.color" description="Color" type="color" default="#999999"  value="#999999"/>
+   </Group>
+
+   <Group description="Menu Navigasi di Footer" selector="#footer-navmenu">
+     <Variable name="navmenufooter.font" description="Font" type="font"
+         default="bold 14px Raleway, Arial, sans-serif" value="bold 14px Raleway, Arial, sans-serif"/>
+	 <Variable name="navmenufooter.bg" description="Background Color" type="color" default="#292929"  value="#292929"/>
+     <Variable name="navmenufooter.color" description="Color" type="color" default="#ffffff"  value="#ffffff"/>
+     <Variable name="navmenufooter.hover.color" description="Hover Color" type="color" default="#ffffff"  value="#ffffff"/>
+   </Group>
+   
+   <Group description="Warna Footer" selector="#footer-wrapper">
+     <Variable name="footer.color" description="Color" type="color" default="#dddddd" value="#dddddd"/>
+	 <Variable name="footer.body.link.color" description="Link Color" type="color" default="#dddddd" value="#dddddd"/>
+	 <Variable name="footer.hover.color" description="Hover Color" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+
+   <Group description="Back to Top" selector="#back-to-top"> 
+     <Variable name="backtp.background.color" description="Background" type="color" default="#175A96" value="#175A96"/>
+	 <Variable name="backtp.color" description="Color" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+   
+   <Group description="Widget Featured Post" selector=".FeaturedPost .post-summary"> 
+     <Variable name="jwfp.background.color" description="Background" type="color" default="#ffffff" value="#ffffff"/>
+	 <Variable name="jwfp.color" description="Color" type="color" default="#555555" value="#555555"/>
+   </Group> 
+
+   Variable definitions end
+   ========================*/
+   
+	<Group description="JANGAN DIEDIT">
+		<Variable name="body.text.font" description="Font" type="font" default="normal normal 14px Raleway, Arial, sans-serif" value="normal normal 14px Raleway, Arial, sans-serif"/>
+		<Variable name="tabs.font" description="0" type="font" default="normal normal 14px Raleway, Arial, sans-serif" value="normal normal 14px Raleway, Arial, sans-serif"/>
+		<Variable name="posts.icons.color" description="1" type="color" default="#707070" value="#707070"/>
+		<Variable name="labels.background.color" description="2" type="color" default="#ffffff" value="#ffffff"/>
+		<Variable name="blog.title.font" description="3" type="font" default="normal normal 14px Raleway, Arial, sans-serif" value="normal normal 14px Raleway, Arial, sans-serif"/>
+		<Variable name="blog.title.color" description="4" type="color" default="#fff" value="#ffffff"/>
+		<Variable name="header.icons.color" description="5" type="color" default="#fff" value="#ffffff"/>
+		<Variable name="tabs.color" description="14" type="color" default="#ccc" value="#cccccc"/>
+		<Variable name="tabs.selected.color" description="6" type="color" default="#fff" value="#ffffff"/>
+		<Variable name="tabs.overflow.background.color" description="16" type="color" default="$(posts.background.color)" value="#ffffff"/>
+		<Variable name="tabs.overflow.color" description="7" type="color" default="#393939" value="#393939"/>
+		<Variable name="tabs.overflow.selected.color" description="18" type="color" default="#393939" value="#393939"/>
+		<Variable name="posts.title.font" description="8" type="font" default="normal normal 20px Raleway, Arial, sans-serif" value="normal normal 20px Raleway, Arial, sans-serif"/>
+		<Variable name="posts.text.font" description="9" type="font" default="normal normal 14px Raleway, Arial, sans-serif" value="normal normal 14px Raleway, Arial, sans-serif"/>
+		<Variable name="posts.text.color" description="10" type="color" default="#393939" value="#393939"/>
+	</Group>
+
+/**
+* Eric Meyer&#39;s Reset CSS v2.0 http://meyerweb.com/eric/tools/css/reset/ 
+* http://cssreset.com
+*/
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;/*font-size:100%;*/font:inherit;vertical-align:baseline;}
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;display:block;}*{margin:0;padding:0;}html{display:block;}blockquote,q{quotes:none;}blockquote::before,blockquote::after,q::before,q::after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
@@ -2352,3 +2492,4 @@ display:none;//
 .post-body pre .google-auto-placed, .post-body table .google-auto-placed, .post-body blockquote .google-auto-placed, #header-container .google-auto-placed, .sidebar-sticky .google-auto-placed{
     display: none;
 }
+
